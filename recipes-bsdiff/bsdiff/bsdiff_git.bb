@@ -4,14 +4,14 @@ DESCRIPTION = "BSDiff"
 AUTHOR = "zhuyie, Colin Percival"
 HOMEPAGE = "https://github.com/zhuyie/bsdiff"
 
-LICENSE = "bsdiff"
+LICENSE = "BSD-2-Clause"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=f83b6905339a1462b8b70a6d742af235"
 
 
 # SRC_URI = "git://github.com/microsoft/do-client;protocol=https;branch=main"
 # SRCREV = "ef70c5c8a59d46820c648f434249516957966e7f"
 # PV = "1.0+git${SRCPV}"
-# S = "${WORKDIR}/git" 
+# S = "${WORKDIR}/git"
 
 #
 # OPTION#1 - Bind to specific branch and commit
@@ -22,14 +22,14 @@ SRC_URI = "git://github.com/zhuyie/bsdiff.git;protocol=https;branch=master \
 # Date: Feb 8, 2022 - This is based on iot-hub-device-update-delta/vcpkg/ports/bsdiff/portfile.cmake
 #                     This requires bsdiff-cmakelistspath (see SRC_URI above)
 SRCREV = "d668332fa50fe55e74442dbee9e75acf26e40801"
-S = "${WORKDIR}/git" 
+S = "${WORKDIR}/git"
 
 #
 # OPTION#2 - Following is an example for building bsdiff using a local tarball.
 #
 # BSDIFF_SRC_URI ?= "file://bsdiff.tar.gz"
 # SRC_URI = "${BSDIFF_SRC_URI}"
-# S = "${WORKDIR}/bsdiff" 
+# S = "${WORKDIR}/bsdiff"
 
 #
 # OPTION#3 - Auto select based on BSDIFF_SRC_URI build variable.
